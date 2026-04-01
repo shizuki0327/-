@@ -15,6 +15,12 @@
 工夫した点２　開発実績ページの管理画面を一本化
 当初はモビリティ・AV機器・医療ヘルスケアなど各カテゴリをサイドバーに個別に作成する想定でしたが、カスタム投稿タイプで「開発実績」を一つ作りその中にまとめることで、クライアントが迷わず編集できる構成にしました。各カテゴリで表示する項目が異なるため、入力がない項目は自動的に非表示になる仕組みを実装し、一つの管理画面で柔軟に編集できるようにしました。
 
-<img width="400px"  alt="image" src="https://github.com/user-attachments/assets/c1c34ac1-c6c5-44da-b8d6-c712dda54d02" />
-<img width="400px"  alt="image" src="https://github.com/user-attachments/assets/20734adf-32a6-40e4-8a13-f7caac8cb3a7" />
-<img width="400px" alt="image" src="https://github.com/user-attachments/assets/b4a8442c-d9ff-4bc2-a2cc-4e059382acde" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/c1c34ac1-c6c5-44da-b8d6-c712dda54d02" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/20734adf-32a6-40e4-8a13-f7caac8cb3a7" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/b4a8442c-d9ff-4bc2-a2cc-4e059382acde" />
+
+
+工夫した点３　スクロールに応じてヘッダーの背景を切り替え
+トップページのヘッダーは初期状態では背景透過でメインビジュアルに溶け込む見た目にしていますが、スクロールするにつれて背景画像との兼ね合いで文字が見づらくなるため、スクロールし始めると背景が白に切り替わるよう実装しました。getBoundingClientRect()でヘッダーとメインビジュアルの位置を比較し、重なったタイミングでクラスを付け替えることで切り替えを実現しています。
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/ed961e4d-37f4-4960-b50d-f10eb906c170" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/f3701204-66de-4d0e-924b-609869527eda" />
