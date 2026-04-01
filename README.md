@@ -14,5 +14,6 @@
 
 工夫した点２　開発実績ページの管理画面を一本化
 当初はモビリティ・AV機器・医療ヘルスケアなど各カテゴリをサイドバーに個別に作成する想定でしたが、カスタム投稿タイプで「開発実績」を一つ作りその中にまとめることで、クライアントが迷わず編集できる構成にしました。各カテゴリで表示する項目が異なるため、入力がない項目は自動的に非表示になる仕組みを実装し、一つの管理画面で柔軟に編集できるようにしました。
+
 <img width="400px"  alt="image" src="https://github.com/user-attachments/assets/c1c34ac1-c6c5-44da-b8d6-c712dda54d02" />
 <img width="400px"  alt="image" src="https://github.com/user-attachments/assets/20734adf-32a6-40e4-8a13-f7caac8cb3a7" />
