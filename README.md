@@ -25,3 +25,11 @@
 
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/ed961e4d-37f4-4960-b50d-f10eb906c170" />
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/f3701204-66de-4d0e-924b-609869527eda" />
+
+
+工夫した点４　開発実績ページのカテゴリホバーで画像を切り替え
+左のカテゴリ一覧にカーソルを乗せると、右側の画像がそのカテゴリに対応したものに切り替わるよう実装しました。PHPのループで画像に連番のIDを振っておき、JSはホバーした番号から対応する画像IDを生成して探すだけというシンプルな仕組みにしています。管理者は画像を登録するだけで自動でIDが振られるため、カテゴリを追加してもJSを変更する必要がなく、運用の手間を減らせます。
+
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/81ece12b-fb4d-4cfb-9079-c3dfb946d8f6" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/5b73ea56-9a0e-41db-898f-706686d829b8" />
+
