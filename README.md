@@ -33,3 +33,8 @@
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/81ece12b-fb4d-4cfb-9079-c3dfb946d8f6" />
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/5b73ea56-9a0e-41db-898f-706686d829b8" />
 
+工夫した点５　スライダーをSplideで実装
+当初Swiperで実装を試みましたが、SwiperはスライドのサイズをJSがpxで計算する仕組みのため、gapや子要素の%指定と噛み合わずデザイン通りに実装できませんでした。SplideはCSSで幅を管理するためこの問題が起きず、自分からSplideへの切り替えを提案して解決しました。またプログレスバーは標準搭載されていないため自前で実装し、スライドの進捗を視覚的に表示しています。
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/7887918f-e5c7-404b-8ad4-2b52515b956f" />
+
