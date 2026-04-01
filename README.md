@@ -10,4 +10,4 @@
 社内で用意されていたバリデーションのコードをそのまま使わず、仕組みを理解するためにあえて自分で実装しました。コードとしては冗長な部分もありますが、一から書くことでフォームの動作原理を深く理解することができました。
 コードはassets/js/validation.jsに書きました。
 未入力や形式不正（カタカナ・電話番号・メールアドレス）の場合、該当項目の下に赤字でエラーメッセージを表示を以下の写真のように表示しました。
-<img width="500"  alt="image" src="https://github.com/user-attachments/assets/40a0c5e5-b898-495b-afb8-46d9157d0bce" />
+<img width="70%"  alt="image" src="https://github.com/user-attachments/assets/40a0c5e5-b898-495b-afb8-46d9157d0bce" />
