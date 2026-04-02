@@ -1,4 +1,4 @@
-[validation.js](https://github.com/user-attachments/files/26404693/validation.js)概要〉株式会社EISHINでの長期インターンにて担当した、株式会社エクスのコーポレートサイト新規構築案件です。
+概要〉株式会社EISHINでの長期インターンにて担当した、株式会社エクスのコーポレートサイト新規構築案件です。
 【開発背景】既存のHPが古くなったためリニューアルを検討しており、「デザインを新しくしたい」「自社で手軽にコンテンツを更新したい」というクライアントの要望を解決するために制作されました。
 【利用技術】HTML5, CSS3 (Sass), JavaScript, PHP, WordPress
 【開発環境】Local (Local by Flywheel), VS Code, Cyberduck (FTPソフト), Git, Figma
@@ -10,31 +10,20 @@
 社内で用意されていたバリデーションのコードをそのまま使わず、仕組みを理解するためにあえて自分で実装しました。コードとしては冗長な部分もありますが、一から書くことでフォームの動作原理を深く理解することができました。
 コードはassets/js/validation.jsに書きました。
 未入力や形式不正（カタカナ・電話番号・メールアドレス）の場合、該当項目の下に赤字でエラーメッセージを表示を以下の写真のように表示しました。
-<img width="70%"  alt="image" src="https://github.com/user-attachments/assets/40a0c5e5-b898-495b-afb8-46d9157d0bce" />
 
 工夫した点２　開発実績ページの管理画面を一本化
 当初はモビリティ・AV機器・医療ヘルスケアなど各カテゴリをサイドバーに個別に作成する想定でしたが、カスタム投稿タイプで「開発実績」を一つ作りその中にまとめることで、クライアントが迷わず編集できる構成にしました。各カテゴリで表示する項目が異なるため、入力がない項目は自動的に非表示になる仕組みを実装し、一つの管理画面で柔軟に編集できるようにしました。
-
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/c1c34ac1-c6c5-44da-b8d6-c712dda54d02" />
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/20734adf-32a6-40e4-8a13-f7caac8cb3a7" />
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/b4a8442c-d9ff-4bc2-a2cc-4e059382acde" />
 
 
 工夫した点３　スクロールに応じてヘッダーの背景を切り替え
 トップページのヘッダーは初期状態では背景透過でメインビジュアルに溶け込む見た目にしていますが、スクロールするにつれて背景画像との兼ね合いで文字が見づらくなるため、スクロールし始めると背景が白に切り替わるよう実装しました。getBoundingClientRect()でヘッダーとメインビジュアルの位置を比較し、重なったタイミングでクラスを付け替えることで切り替えを実現しています。
 
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/ed961e4d-37f4-4960-b50d-f10eb906c170" />
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/f3701204-66de-4d0e-924b-609869527eda" />
-
 
 工夫した点４　開発実績ページのカテゴリホバーで画像を切り替え
 左のカテゴリ一覧にカーソルを乗せると、右側の画像がそのカテゴリに対応したものに切り替わるよう実装しました。PHPのループで画像に連番のIDを振っておき、JSはホバーした番号から対応する画像IDを生成して探すだけというシンプルな仕組みにしています。管理者は画像を登録するだけで自動でIDが振られるため、カテゴリを追加してもJSを変更する必要がなく、運用の手間を減らせます。
 
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/81ece12b-fb4d-4cfb-9079-c3dfb946d8f6" />
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/5b73ea56-9a0e-41db-898f-706686d829b8" />
 
 工夫した点５　企業情報の沿革ページのスライダーをSplideで実装
 当初Swiperで実装を試みましたが、SwiperはスライドのサイズをJSがpxで計算する仕組みのため、gapや子要素の%指定と噛み合わずデザイン通りに実装できませんでした。SplideはCSSで幅を管理するためこの問題が起きず、自分からSplideへの切り替えを提案して解決しました。またプログレスバーは標準搭載されていないため自前で実装し、スライドの進捗を視覚的に表示しています。
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/7887918f-e5c7-404b-8ad4-2b52515b956f" />
 
