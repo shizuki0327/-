@@ -116,3 +116,7 @@ bar.style.width = String(100 * rate) + "%";
 
 
 
+https://github.com/user-attachments/assets/b0216fca-c23f-4eb6-927a-930b2cdeae0a
+
+
+
