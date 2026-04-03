@@ -12,6 +12,22 @@
 コードはassets/js/validation.jsに書きました。
 未入力や形式不正（カタカナ・電話番号・メールアドレス）の場合、該当項目の下に赤字でエラーメッセージを表示を以下の写真のように表示しました。
 
+<details>
+<summary>バリデーション例（フリガナ）</summary>
+```javascript
+var katakanaRegex = /^[ァ-ヶー　]*$/;
+
+if (value === "") {
+  errorMessage.textContent = "フリガナを入力してください。";
+} else if (katakanaRegex.test(value)) {
+  errorMessage.textContent = "";
+} else {
+  errorMessage.textContent = "カタカナで入力してください。";
+}
+```
+
+</details>
+
 工夫した点２　開発実績ページの管理画面を一本化
 
 当初はモビリティ・AV機器・医療ヘルスケアなど各カテゴリをサイドバーに個別に作成する想定でしたが、カスタム投稿タイプで「開発実績」を一つ作りその中にまとめることで、クライアントが迷わず編集できる構成にしました。各カテゴリで表示する項目が異なるため、入力がない項目は自動的に非表示になる仕組みを実装し、一つの管理画面で柔軟に編集できるようにしました。
