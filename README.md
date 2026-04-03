@@ -112,5 +112,6 @@ bar.style.width = String(100 * rate) + "%";
 });
 </pre>
 </details>
+![レコーディング 2026-04-03 202117](https://github.com/user-attachments/assets/9d4a2bed-591b-49c3-84c0-bd8434ca86f7)
 
 
