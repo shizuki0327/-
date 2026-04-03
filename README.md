@@ -42,7 +42,18 @@ if (value === "") {
 
 工夫した点３　スクロールに応じてヘッダーの背景を切り替え<br>
 トップページのヘッダーは初期状態では背景透過でメインビジュアルに溶け込む見た目にしていますが、スクロールするにつれて背景画像との兼ね合いで文字が見づらくなるため、スクロールし始めると背景が白に切り替わるよう実装しました。getBoundingClientRect()でヘッダーとメインビジュアルの位置を比較し、重なったタイミングでクラスを付け替えることで切り替えを実現しています。
+from PIL import Image
 
+# 私が生成した画像を読み込む
+# (ファイル名は適宜変更してください)
+img_before = Image.open('<img width="400" alt="image" src="https://github.com/user-attachments/assets/f845c1f1-52d4-4f2a-99f1-6c29156a6e59" />')
+img_after = Image.open('<img width="400"  alt="image" src="https://github.com/user-attachments/assets/5cdd8caa-fd85-4eed-91f0-43429e375053" />')
+
+# 1秒間隔でループするGIFとして保存
+# duration=1000は1000ミリ秒(1秒)
+img_before.save('optimized_admin_dynamic_ui.gif', save_all=True, append_images=[img_after], duration=1000, loop=0)
+
+print("GIF animation created: optimized_admin_dynamic_ui.gif")
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/f845c1f1-52d4-4f2a-99f1-6c29156a6e59" />
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/5cdd8caa-fd85-4eed-91f0-43429e375053" />
 
