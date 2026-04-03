@@ -14,7 +14,8 @@
 
 <details>
 <summary>バリデーション例（フリガナ）</summary>
-```javascript
+<pre>
+
 var katakanaRegex = /^[ァ-ヶー　]*$/;
 
 if (value === "") {
@@ -24,8 +25,8 @@ if (value === "") {
 } else {
   errorMessage.textContent = "カタカナで入力してください。";
 }
-```
 
+</pre>
 </details>
 
 
