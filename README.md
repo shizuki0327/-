@@ -21,6 +21,10 @@
 
 トップページのヘッダーは初期状態では背景透過でメインビジュアルに溶け込む見た目にしていますが、スクロールするにつれて背景画像との兼ね合いで文字が見づらくなるため、スクロールし始めると背景が白に切り替わるよう実装しました。getBoundingClientRect()でヘッダーとメインビジュアルの位置を比較し、重なったタイミングでクラスを付け替えることで切り替えを実現しています。
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/f845c1f1-52d4-4f2a-99f1-6c29156a6e59" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/b4b28d0e-ab93-443b-98a2-639cff775286" />
+
+
 
 工夫した点４　開発実績ページのカテゴリホバーで画像を切り替え
 
