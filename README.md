@@ -55,8 +55,48 @@ if (value === "") {
 
 
 工夫した点４　開発実績ページのカテゴリホバーで画像を切り替え
-
 当初は画像が切り替わらない仕様でしたが、カーソルを乗せるだけで対応する画像が切り替わった方が視覚的にわかりやすいと考え、自分から提案して実装しました。WordPressのカスタム投稿タイプからデータを取得するループ内でカテゴリと画像に同じ連番のIDを自動で振り、ホバー時にJSがその番号をもとに対応する画像を探して表示する仕組みにしています。管理者は管理画面から画像をアップロードするだけで自動的にIDが振られてカテゴリと紐づくため、JSを変更する必要がなく簡単に運用できます。
+<details>
+<summary>PHP：連番IDの生成（参考）</summary>
+<pre>
+$args = array(
+  'post_type' => 'post',
+  'posts_per_page' => -1,
+);
+query=newWPQuery(query = new WP_Query(
+query=newWPQ​uery(args);
+if ($query->have_posts()):
+  $counter = 1;
+  while ($query->have_posts()):
+    $query->the_post();
+?>
+    &lt;a id="item-&lt;?php echo $counter; ?&gt;"&gt;
+      &lt;?php the_title(); ?&gt;
+    &lt;/a&gt;
+&lt;?php
+    $counter++;
+  endwhile;
+endif;
+wp_reset_postdata();
+</pre>
+</details>
+<details>
+<summary>JavaScript：ホバー処理（参考）</summary>
+<pre>
+items.forEach((item) => {
+  item.addEventListener("mouseenter", function () {
+    document.querySelectorAll(".innerItem").forEach((el) => {
+      el.classList.remove("active");
+    });
+const targetId = `item-${this.id.split("-")[1]}`;
+const target = document.getElementById(targetId);
+if (target) {
+  target.classList.add("active");
+}
+});
+});
+</pre>
+</details>
 
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/d4c73c6a-7d89-4450-877f-e129a037cf67" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/5560c9f8-fa49-449c-bb75-364157f6fe7e" />
