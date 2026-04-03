@@ -12,6 +12,8 @@
 コードはassets/js/validation.jsに書きました。
 未入力や形式不正（カタカナ・電話番号・メールアドレス）の場合、該当項目の下に赤字でエラーメッセージを表示を以下の写真のように表示しました。
 
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/a4e80d08-0438-4bed-9562-a91dc6cea1ce" />
+
 <details>
 <summary>バリデーション例（フリガナ）</summary>
 <pre>
