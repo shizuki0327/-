@@ -64,7 +64,18 @@ if (value === "") {
 
 
 工夫した点５　企業情報の沿革ページのスライダーをSplideで実装
+当初Swiperで実装を試みましたが、SwiperはスライドのサイズをJSがpxで計算する仕組みのため、gapや子要素の%指定と噛み合わずデザイン通りに実装できませんでした。自分からSplideへの切り替えを提案したところ、SplideはCSSのflexで幅を管理するためカスタムスタイルと競合せず問題を解消できました。またSplideにはプログレスバーが標準搭載されていないため自前で実装し、スライドが動くたびに現在位置と総スライド数から進捗率を計算してバーの幅をパーセントで変化させることで現在位置を視覚的に表示しています。
 
-当初Swiperで実装を試みましたが、SwiperはスライドのサイズをJSがpxで計算する仕組みのため、gapや子要素の%指定と噛み合わずデザイン通りに実装できませんでした。SplideはCSSで幅を管理するためこの問題が起きず、自分からSplideへの切り替えを提案して解決しました。またプログレスバーは標準搭載されていないため自前で実装し、スライドの進捗を視覚的に表示しています。
+<details>
+<summary>プログレスバーの実装</summary>
+<pre>
+var bar = splide.root.querySelector(".my-carousel-progress-bar");
+splide.on("mounted move", function () {
+var end = splide.Components.Controller.getEnd() + 1;
+var rate = Math.min((splide.index + 1) / end, 1);
+bar.style.width = String(100 * rate) + "%";
+});
+</pre>
+</details>
 
 
