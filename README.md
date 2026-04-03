@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/d8785320-b92c-484b-823d-90f4a80bc836
 概要〉株式会社EISHINでの長期インターンにて担当した、株式会社エクスのコーポレートサイト新規構築案件です。
 【開発背景】既存のHPが古くなったためリニューアルを検討しており、「デザインを新しくしたい」「自社で手軽にコンテンツを更新したい」というクライアントの要望を解決するために制作されました。
 【利用技術】HTML5, CSS3 (Sass), JavaScript, PHP, WordPress
@@ -93,8 +95,11 @@ if (target) {
 </pre>
 </details>
 
-<img width="400"  alt="image" src="https://github.com/user-attachments/assets/d4c73c6a-7d89-4450-877f-e129a037cf67" />
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/5560c9f8-fa49-449c-bb75-364157f6fe7e" />
+
+
+https://github.com/user-attachments/assets/4ae0c0aa-b9f2-4695-bf48-cb33fb890a88
+
+
 
 <br><br><br>
 
