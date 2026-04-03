@@ -32,6 +32,7 @@
 左のカテゴリ一覧にカーソルを乗せると、右側の画像がそのカテゴリに対応したものに切り替わるよう実装しました。PHPのループで画像に連番のIDを振っておき、JSはホバーした番号から対応する画像IDを生成して探すだけというシンプルな仕組みにしています。管理者は画像を登録するだけで自動でIDが振られるため、カテゴリを追加してもJSを変更する必要がなく、運用の手間を減らせます。
 
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/d4c73c6a-7d89-4450-877f-e129a037cf67" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/5560c9f8-fa49-449c-bb75-364157f6fe7e" />
 
 
 
