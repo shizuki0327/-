@@ -153,5 +153,23 @@ https://github.com/user-attachments/assets/793e179b-d9db-4b0f-b475-f695277e6eb3
 工夫した点８　管理画面からカードの色とテキストを変更できる仕組みを実装
 【課題】開発中に色やテキストの変更依頼が複数回あり、その都度コードを修正していました。納品後もクライアントが自分で変更したい場合にエンジニアが必要になってしまう状態でした。
 【対応】管理画面から色とテキストを変更できるようにしました。CSSカスタムプロパティを活用することで、管理画面で設定した色がカードのボーダー・タイトル・ボタンなど複数箇所に一括で反映されます。テキストもカスタムフィールドで管理しているため、納品後もクライアントがコードを触らずに自由に編集できます。
-
+<details>
+<summary>CSSカスタムプロパティで色を一括管理（参考）</summary>
+<pre>
+&lt;div class="item" style="--item-color: &lt;?php echo esc_attr($main_color); ?&gt;;"&gt;
+  &lt;!-- コンテンツ --&gt;
+&lt;/div&gt;
+</pre>
+<pre>
+.item {
+  border: 1px solid var(--item-color);
+}
+.item-title {
+  color: var(--item-color);
+}
+.item-btn {
+  background-color: var(--item-color);
+}
+</pre>
+</details>
 
