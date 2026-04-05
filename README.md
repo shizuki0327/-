@@ -133,7 +133,8 @@ https://github.com/user-attachments/assets/b0216fca-c23f-4eb6-927a-930b2cdeae0a
 
 https://github.com/user-attachments/assets/ad55268b-1aa7-49a9-b94e-54c0fd073faf
 
-
+工夫した点　ホバーで画像を拡大してクリッカブルであることを視覚的に表現<br>
+もともとのデザインは矢印の色が反転するだけで、その項目がクリックできることが伝わりづらかったため、カーソルを乗せた項目の画像が拡大するアニメーションを追加しました。ユーザーが「ここを押せる」と直感的にわかるようにしています。
 https://github.com/user-attachments/assets/793e179b-d9db-4b0f-b475-f695277e6eb3
 
 
