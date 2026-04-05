@@ -131,6 +131,10 @@ https://github.com/user-attachments/assets/3fa7a337-61f2-4fe0-9142-c997595e307b
 https://github.com/user-attachments/assets/b0216fca-c23f-4eb6-927a-930b2cdeae0a
 
 
+工夫した点　ブレイクポイントで画像エリアを広く見せるレイアウト調整<br>
+【課題】画面幅が狭いときは左のテキストが改行されて縦に長くなり、画像エリアが圧迫されてカードが見切れていました。また画面幅が広くなりすぎると画像とテキストが離れすぎて見づらくなる問題もありました。<br>
+【対応】ブレイクポイントでテキストの改行を調整して画像エリアを広く確保し、max-widthで幅を固定して中央寄せにすることでデザインの崩れを防ぎました。
+
 https://github.com/user-attachments/assets/ad55268b-1aa7-49a9-b94e-54c0fd073faf
 
 工夫した点　ホバーで画像を拡大してクリッカブルであることを視覚的に表現<br>
